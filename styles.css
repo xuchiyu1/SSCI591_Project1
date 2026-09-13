@@ -58,6 +58,23 @@ section h3 {
   border-radius: 6px;
 }
 
+.hardware-photo-frame {
+  position: relative;
+  width: 75%;
+  max-width: 500px;
+  aspect-ratio: 16 / 9;
+  margin: 0 auto 16px auto;
+}
+
+.hardware-photo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 56.25%;
+  max-width: none;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
 button {
   background-color: #1f3a5f;
   color: #fff;
