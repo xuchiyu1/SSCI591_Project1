@@ -26,7 +26,9 @@
       <h2>Projects &amp; Skills</h2>
 
       <h3>Clockles — Wearable Cuffless-BP Prototype</h3>
-      <img src="images/clockles-hardware.jpg" alt="ESP32-S3 wearable ECG and PPG hardware prototype" class="project-photo">
+      <div class="hardware-photo-frame">
+        <img src="images/clockles-hardware.jpg" alt="ESP32-S3 wearable ECG and PPG hardware prototype" class="project-photo hardware-photo">
+      </div>
       <ul>
         <li>Built a wearable ECG + PPG sensor front-end on an ESP32-S3 (MAX30003 over SPI, MAX30102 over I2C); root-caused a frozen ECG FIFO to a missing external 32.768 kHz clock and generated it from the microcontroller to recover the waveform.</li>
         <li>Reused a single feature-extraction codebase to serve both a public dataset and live hardware, extracting six physiological features into a Random Forest model (5-fold CV; systolic MAE improved from 20.2 to 16.1 mmHg).</li>
