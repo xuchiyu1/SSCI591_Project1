@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chiyu (Leo) Xu — Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="hero">
+    <h1>Chiyu (Leo) Xu</h1>
+    <p class="tagline">Seeking AI/ML Opportunities</p>
+  </header>
+
+  <main>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p id="introText">AI/ML engineer with an ECE background who builds end-to-end — from sensor hardware, to data pipelines, to trained models.</p>
+      <button id="toggleBtn">Read More</button>
+      <p class="education"><strong>Education:</strong> M.S. in Geographic Information Science and Technology, University of Southern California (Jan. 2026&ndash;present).</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects &amp; Skills</h2>
+
+      <h3>Clockles — Wearable Cuffless-BP Prototype</h3>
+      <img src="images/clockles-hardware.jpg" alt="ESP32-S3 wearable ECG and PPG hardware prototype" class="project-photo">
+      <ul>
+        <li>Built a wearable ECG + PPG sensor front-end on an ESP32-S3 (MAX30003 over SPI, MAX30102 over I2C); root-caused a frozen ECG FIFO to a missing external 32.768 kHz clock and generated it from the microcontroller to recover the waveform.</li>
+        <li>Reused a single feature-extraction codebase to serve both a public dataset and live hardware, extracting six physiological features into a Random Forest model (5-fold CV; systolic MAE improved from 20.2 to 16.1 mmHg).</li>
+      </ul>
+
+      <h3>Data Analyst Agent</h3>
+      <img src="images/data-analyst-agent-demo.png" alt="Data Analyst Agent Streamlit interface showing a natural-language query and generated chart" class="project-photo">
+      <ul>
+        <li>Built and shipped a conversational data-analysis agent (Python, Claude API, Streamlit): natural-language questions trigger model-generated pandas code through a self-correcting, multi-tool execution loop, returning answers with charts.</li>
+      </ul>
+
+      <h3>Skills</h3>
+      <ul class="skills-list">
+        <li>Python, SQL</li>
+        <li>PyTorch, Machine Learning (Random Forest)</li>
+        <li>LLM prompt engineering</li>
+        <li>ESP32-S3 / embedded systems</li>
+        <li>Streamlit</li>
+        <li>Git / GitHub</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:chiyux@usc.edu">chiyux@usc.edu</a></p>
+      <p>GitHub: <a href="https://github.com/xuchiyu1" target="_blank" rel="noopener">github.com/xuchiyu1</a></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Page generated on: <span id="dateTime"></span></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
