@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LA County Environmental Burden Explorer: an ArcGIS Experience Builder app built with CalEnviroScreen 5.0 data.">
+  <title>LA County Environmental Burden Explorer — Chiyu (Leo) Xu</title>
+  <style>
+    :root { --bg: #fbf7f2; --text: #2b2118; --muted: #6b5d50; --accent: #a8321e; --card: #ffffff; --line: #e8ddd1; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; line-height: 1.6; }
+    main { max-width: 1100px; margin: 0 auto; padding: 32px 16px 48px; }
+    a { color: var(--accent); }
+    .back { font-size: 0.95rem; }
+    h1 { font-size: clamp(1.6rem, 4vw, 2.3rem); line-height: 1.2; margin: 16px 0 8px; }
+    .subtitle { color: var(--muted); margin: 0 0 20px; }
+    .intro { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px 20px; margin-bottom: 20px; }
+    .intro p { margin: 0 0 10px; }
+    .intro p:last-child { margin-bottom: 0; }
+    .app-frame { width: 100%; height: 75vh; min-height: 480px; border: 1px solid var(--line); border-radius: 12px; background: #fff; }
+    .note { color: var(--muted); font-size: 0.9rem; margin-top: 12px; }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="back" href="index.html">← Back to portfolio</a>
+    <h1>LA County Environmental Burden Explorer</h1>
+    <p class="subtitle">SSCI 591 Project 2 · ArcGIS Experience Builder · CalEnviroScreen 5.0</p>
+
+    <section class="intro" aria-label="About this app">
+      <p>This web app maps where people in Los Angeles County carry the heaviest combined burden of pollution and social vulnerability. Each of the county's 2,495 census tracts is colored by its overall CalEnviroScreen 5.0 percentile, from light yellow (lower burden) to dark red (higher burden).</p>
+      <p>Click any tract to see its pollution, health, and poverty indicators. Open the legend to read the color classes, or use the filter to show only the tracts in the 80th percentile or higher.</p>
+    </section>
+
+    <iframe
+      class="app-frame"
+      src="https://experience.arcgis.com/experience/697117d4ae944c818837f1e0e6470850"
+      title="LA County Environmental Burden Explorer (ArcGIS Experience Builder app)"
+      allowfullscreen
+      loading="lazy">
+    </iframe>
+
+    <p class="note">Data: California Office of Environmental Health Hazard Assessment (OEHHA), CalEnviroScreen 5.0 (2026). <a href="https://experience.arcgis.com/experience/697117d4ae944c818837f1e0e6470850" target="_blank" rel="noopener">Open the app in a new tab</a>.</p>
+  </main>
+</body>
+</html>
